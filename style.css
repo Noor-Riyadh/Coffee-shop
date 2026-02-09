@@ -1,0 +1,32 @@
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+.navbar {
+    .container{
+        .logo{
+            height: clamp(18px , 4vw , 25px);
+        }
+    }
+    .navbar-brand {
+        font-weight: 900;
+        color: #333d4b;
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        color: #83888F !important;
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .nav-link:hover {
+        color: #333d4b !important;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+}
