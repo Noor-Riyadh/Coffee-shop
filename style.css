@@ -79,17 +79,45 @@ body {
 }
 
 .collection-section {
-    .container {
-        .coffee-image {
-            width: 253.5px;
-            height: 193px;
-            opacity: 1;
+    position: relative;
+    padding-top: 40px;
+    margin-top: 80px;
 
+
+    .custom-text {
+        padding-top: 50px;
+        /* background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%); */
+        background: linear-gradient(180deg, rgba(39, 41, 43, 0.5) 0%, rgba(254, 252, 247, 0) 100%);
+        font-family: "Fraunces", serif;
+        font-weight: 900;
+        font-size: clamp(40px, 10vw, 150px);
+        text-transform: lowercase;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+
+        /* Positioning */
+        position: absolute;
+        top: -100px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        text-align: center;
+
+
+    }
+
+    .container {
+
+        .coffee-image {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 24px;
         }
 
         .coffee-info {
             .coffee-title {
-                font-family: Fraunces;
+                font-family: "Fraunces", serif;
                 font-weight: 900;
                 font-style: Black;
                 font-size: 24px;
@@ -100,7 +128,7 @@ body {
             }
 
             .coffee-desc {
-                font-family: Barlow;
+                font-family: "Barlow", serif;
                 font-weight: 400;
                 font-style: Regular;
                 font-size: 16px;
@@ -111,4 +139,32 @@ body {
             }
         }
     }
+}
+
+/* TABLET (Medium screens) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .collection-section {
+        .custom-text {
+            top: -115px;
+        }
+
+    }
+
+}
+
+/* DESKTOP (Large screens) */
+@media (min-width: 992px) {
+    .collection-section {
+        margin-top: 150px !important;
+        padding-top: 100px;
+
+        .custom-text {
+            top: -130px;
+        }
+
+        .coffee-image {
+            max-width: 255px;
+        }
+    }
+
 }

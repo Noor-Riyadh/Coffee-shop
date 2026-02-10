@@ -1,0 +1,27 @@
+/* TABLET (Medium screens) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .collection-section {
+        .custom-text {
+            top: -115px;
+        }
+
+    }
+
+}
+
+/* DESKTOP (Large screens) */
+@media (min-width: 992px) {
+    .collection-section {
+        margin-top: 150px !important;
+        padding-top: 100px;
+
+        .custom-text {
+            top: -130px;
+        }
+
+        .coffee-image {
+            max-width: 255px;
+        }
+    }
+
+}
