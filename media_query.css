@@ -7,6 +7,42 @@
 
     }
 
+    .hero-section {
+        background-size: 200%;
+        background-position: left 80%;
+
+        h1 {
+            font-size: 48px;
+            text-align: left;
+        }
+    }
+
+    .why-choose-section {
+        .container {
+            margin-bottom: 250px;
+            gap: 24px;
+
+            .why-choose-content {
+
+                h2 {
+                    font-size: 25px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+
+                .benefits-row {
+                    flex-direction: column;
+                    gap: 24px;
+                }
+            }
+
+
+
+        }
+    }
+
 }
 
 /* DESKTOP (Large screens) */
@@ -23,5 +59,33 @@
             max-width: 255px;
         }
     }
+}
+
+@media (max-width:768px) {
+    .why-choose-section {
+        .container {
+            margin-bottom: 250px;
+            gap: 24px;
+
+            .why-choose-content {
+                h2 {
+                    font-size: 20px;
+
+
+                }
+
+                p {
+                    font-size: 12px;
+
+                }
+
+                .benefits-row {
+                    flex-direction: column;
+                    gap: 24px;
+                }
+            }
+        }
+    }
+
 
 }
