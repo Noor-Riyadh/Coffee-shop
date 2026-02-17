@@ -36,55 +36,47 @@ body {
 
 
 .hero-section {
-    /* min-height: initial; */
     width: 100%;
     border-radius: 10px;
-    /* overflow: hidden; */
     background-image: url(./assets/imgs/Hero_image.png);
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     background-size: 150%;
     background-position: left 70%;
-    padding: 100px 0px;
+    padding: 100px 0;
 
     .hero-content {
         padding-left: clamp(18px, 8vw, 48px);
-        padding-right: 10px;
+        /* padding-right: 10px; */
     }
 
     h1 {
-        /* font-size: 32px; 
-        text-align: center; */
+
         font-size: clamp(18px, 10vw, 40px);
         line-height: 1.2;
     }
 
     p {
         font-weight: 400;
-        font-style: Regular;
         font-size: 16px;
-        line-height: 160%;
         letter-spacing: 0px;
         font-size: clamp(12px, 10vw, 18px);
 
 
     }
 
-    a {
-        .custom-btn {
-            /* color: #0E8784; */
-            background-color: #0E8784;
-            font-family: "Fraunces", serif;
-            font-weight: 900;
-            font-style: Black;
-            font-size: 18px;
-            line-height: 140%;
-            letter-spacing: 0px;
-            text-align: center;
+
+    .custom-btn {
+        background-color: rgba(14, 135, 132, 1);
+        font-family: "Fraunces", serif;
+        font-weight: 900;
+        font-size: 18px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: white;
 
 
-        }
     }
 }
 
@@ -249,4 +241,57 @@ body {
 
     }
 
+}
+
+.How-it-works-section {
+    .container {
+        .How-it-works-content {
+            h2 {
+                font-family: "Fraunces";
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 150%;
+                letter-spacing: 0px;
+                color: rgba(131, 136, 143, 1);
+            }
+
+            .How-it-works-row {
+                .How-it-works-card {
+                    h3 {
+                        font-family: Fraunces;
+                        font-weight: 900;
+                        font-style: Black;
+                        font-size: 32px;
+                        line-height: 113.99999999999999%;
+                        letter-spacing: 0px;
+
+                    }
+
+                    p {
+                        font-family: Barlow;
+                        font-weight: 400;
+                        font-style: Regular;
+                        font-size: 16px;
+                        line-height: 160%;
+                        letter-spacing: 0px;
+
+                    }
+
+
+                }
+            }
+
+            .custom-btn {
+                background-color: rgba(14, 135, 132, 1);
+                font-family: "Fraunces", serif;
+                font-weight: 900;
+                font-style: Black;
+                font-size: 18px;
+                line-height: 140%;
+                letter-spacing: 0px;
+                text-align: center;
+            }
+
+        }
+    }
 }

@@ -1,3 +1,19 @@
+/* DESKTOP (Large screens) */
+@media (min-width: 992px) {
+    .collection-section {
+        margin-top: 150px !important;
+        padding-top: 100px;
+
+        .custom-text {
+            top: -130px;
+        }
+
+        .coffee-image {
+            max-width: 255px;
+        }
+    }
+}
+
 /* TABLET (Medium screens) */
 @media (min-width: 768px) and (max-width: 991px) {
     .collection-section {
@@ -8,8 +24,6 @@
     }
 
     .hero-section {
-        background-size: 200%;
-        background-position: left 80%;
 
         h1 {
             font-size: 48px;
@@ -45,23 +59,12 @@
 
 }
 
-/* DESKTOP (Large screens) */
-@media (min-width: 992px) {
-    .collection-section {
-        margin-top: 150px !important;
-        padding-top: 100px;
-
-        .custom-text {
-            top: -130px;
-        }
-
-        .coffee-image {
-            max-width: 255px;
-        }
-    }
-}
-
+/* Mobile */
 @media (max-width:768px) {
+    .hero-section {
+        padding: 50px 0;
+    }
+
     .why-choose-section {
         .container {
             margin-bottom: 250px;
