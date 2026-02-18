@@ -295,3 +295,22 @@ body {
         }
     }
 }
+
+footer {
+    .container {
+        .footer-section {
+            .links {
+                a {
+                    font-family: Barlow;
+                    font-weight: 700;
+                    font-style: Bold;
+                    font-size: 12px;
+                    line-height: 130%;
+                    letter-spacing: 0.92px;
+                    text-transform: uppercase;
+
+                }
+            }
+        }
+    }
+}

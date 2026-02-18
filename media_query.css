@@ -98,6 +98,18 @@
         padding: 0px;
     }
 
-    
+    footer {
+        .container {
+            .footer-section {
+                .links {
+                    a {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+
+
 
 }
