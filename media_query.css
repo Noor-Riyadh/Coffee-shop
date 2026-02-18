@@ -92,3 +92,12 @@
 
 
 }
+
+@media (max-width:320px) {
+    .hero-section {
+        padding: 0px;
+    }
+
+    
+
+}
