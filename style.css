@@ -345,7 +345,7 @@ footer {
 
                         font-size: clamp(18px, 10vw, 40px);
                         line-height: 1.2;
-                        font-family: Fraunces;
+                        font-family: "Fraunces";
                         font-weight: 900;
                         font-style: Black;
                         line-height: 120%;
@@ -357,7 +357,7 @@ footer {
                         font-weight: 400;
                         letter-spacing: 0px;
                         font-size: clamp(12px, 10vw, 18px);
-                        font-family: Barlow;
+                        font-family: "Barlow";
                         font-weight: 400;
                         font-style: Regular;
                         font-size: 16px;
@@ -376,4 +376,35 @@ footer {
     }
 
 
+}
+
+section {
+    .container {
+        .Our_commitment_section {
+            .row {
+                .desc-container {
+                    padding-left: 30px;
+
+                    h1 {
+                        font-family: "Fraunces";
+                        font-weight: 900;
+                        font-style: Black;
+                        font-size: clamp(28px, 5vw, 40px);
+                        line-height: 120%;
+                        letter-spacing: 0px;
+                    }
+
+                    p {
+                        font-family: "Barlow";
+                        font-weight: 400;
+                        font-style: Regular;
+                        font-size: clamp(12px, 10vw, 18px);
+                        line-height: 160%;
+                        letter-spacing: 0px;
+
+                    }
+                }
+            }
+        }
+    }
 }
