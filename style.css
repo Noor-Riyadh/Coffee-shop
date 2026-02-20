@@ -476,8 +476,6 @@ section {
     }
 }
 
-
-
 .Our_headquarters_section {
     .container {
         h3 {
@@ -516,4 +514,68 @@ section {
 
         }
     }
+}
+
+/* ---------------------------------Create a plan page ---------------------- */
+.hero-section-create-plan {
+    .container {
+        .hero-section {
+            width: 100%;
+            border-radius: 20px;
+            background-image: url(./assets/imgs/Subscribe_Image.svg);
+            /* background-image:
+                linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                url(./assets/imgs/Subscribe_Image.svg); */
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            padding: 100px 0;
+
+            .row {
+                margin: 0;
+                width: 100%;
+                position: relative;
+                z-index: 2;
+
+                .hero-content {
+                    padding-left: clamp(18px, 8vw, 48px);
+
+                    h1 {
+
+                        font-size: clamp(18px, 10vw, 40px);
+                        line-height: 1.2;
+                        font-family: "Fraunces";
+                        font-weight: 900;
+                        font-style: Black;
+                        line-height: 120%;
+                        letter-spacing: 0px;
+
+                    }
+
+                    p {
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        font-size: clamp(12px, 10vw, 18px);
+                        font-family: "Barlow";
+                        font-weight: 400;
+                        font-style: Regular;
+                        font-size: 16px;
+                        line-height: 160%;
+                        letter-spacing: 0px;
+
+
+
+                    }
+                }
+            }
+
+
+
+        }
+    }
+
+
 }
