@@ -32,6 +32,11 @@ body {
     .navbar-toggler {
         border: none;
     }
+
+    .nav-link:focus {
+        border: 1px solid rgba(51, 61, 75, 1);
+        border-radius: 50px;
+    }
 }
 
 .hero-section {
@@ -75,6 +80,18 @@ body {
         text-align: center;
         color: white;
 
+        &:hover {
+            background-color: rgba(102, 210, 207, 1);
+        }
+
+        &:focus,
+        &:active,
+        &.btn:focus,
+        &.btn:active {
+            outline: none;
+            box-shadow: none;
+        }
+
 
     }
 }
@@ -95,6 +112,8 @@ body {
         text-transform: lowercase;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
+        /* background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%); */
+
 
 
         /* Positioning */
@@ -284,16 +303,28 @@ body {
                 background-color: rgba(14, 135, 132, 1);
                 font-family: "Fraunces", serif;
                 font-weight: 900;
-                font-style: Black;
                 font-size: 18px;
                 line-height: 140%;
                 letter-spacing: 0px;
-                text-align: center;
-            }
+                color: rgba(254, 252, 247, 1);
 
+                &:hover {
+                    background-color: rgba(102, 210, 207, 1);
+                }
+
+                &:focus,
+                &:active,
+                &.btn:focus,
+                &.btn:active {
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
         }
+
     }
 }
+
 
 footer {
     .container {
@@ -308,6 +339,29 @@ footer {
                     letter-spacing: 0.92px;
                     text-transform: uppercase;
 
+
+                    &:hover {
+                        color: rgba(255, 255, 255, 1);
+                    }
+
+                    &:focus,
+                    &:active {
+                        box-shadow: none;
+                        color: rgba(255, 255, 255, 1);
+
+                    }
+
+                }
+            }
+
+            .social-media-links {
+                a {
+                    color: rgba(254, 252, 247, 1);
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: rgba(253, 214, 186, 1);
+                    }
                 }
             }
         }
@@ -631,6 +685,7 @@ section {
             .selection-card {
                 background-color: rgba(244, 241, 235, 1);
                 border-radius: 8px;
+                transition: all 0.3s ease;
                 cursor: pointer;
 
                 h4 {
@@ -656,6 +711,21 @@ section {
 
                 &:hover {
                     background-color: rgba(14, 135, 132, 1);
+
+                    h4,
+                    p {
+                        color: white;
+                    }
+                }
+
+                &.selected {
+                    background-color: rgba(253, 214, 186, 1);
+
+                    h4,
+                    p {
+                        color: rgba(51, 61, 75, 1);
+                    }
+
                 }
 
 
@@ -703,5 +773,17 @@ section {
         line-height: 140%;
         letter-spacing: 0px;
         color: rgba(254, 252, 247, 1);
+
+        &:hover {
+            background-color: rgba(102, 210, 207, 1);
+        }
+
+        &:focus,
+        &:active,
+        &.btn:focus,
+        &.btn:active {
+            outline: none;
+            box-shadow: none;
+        }
     }
 }
